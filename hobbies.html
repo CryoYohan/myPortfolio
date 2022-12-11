@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Personal Portfolio | Hobbies</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/5b8bf4e5f5.js" crossorigin="anonymous"></script>
+	<link rel="shortcut icon" type="image/png" href="images/wolf.png">
+</head>
+<body id="home">
+	<nav>
+		<img class= "logo" src="images/logo.png" alt= "logo">
+		<ul id="sidemenu">
+			<li><a href="#hobbies">My Hobbies</a></li>
+			<li><a href="about.html">Back to About Me</a></li>
+			<li><a href= "index.html">Back to home</a></li>
+			<li><i class="fa-solid fa-xmark" onclick="closemenu()"></i></li>
+		</ul>
+		<i class="fa-solid fa-bars" onclick="openmenu()"></i>
+	</nav>
+	<main>
+		<div id="header">
+			<div class="container">
+				<div id="header-text">
+					<p>Future Software Engineer</p>
+					<h1>I am <span>Cyril</span><br> from UC-Main.</h1>
+				</div>
+			</div>
+		</div>
+	</main>
+<!--HOBBIES-->
+<!--GAMING-->
+	<div id="hobbies">
+		<div class="container">
+			<div class="row">
+				<div class="hobby-col-1">
+					<h1><span class="italic">Playing</span>Videogames</h1>
+					<p>Gaming has been a part of me ever since I was a young kid. Gaming is a part of me, it is in my blood! Although, i may not be that good like those professional players but I really love to play. I am fond in playing these videogames, especially <em>RPG'S, Open-world, Fantasy and Power-involved games</em>! Here are some of my compiled photos of the games I played.
+					<br><a class="video-clips" href="video-clips.html">View Gaming Videoclips</a></p>
+				</div>
+				<div class="hobby-col-2">
+					<img src="images/gaming.jpg" alt="Gaming Hobby">
+				</div>
+			</div>
+			<div class="hobbies-row">
+					<img src="images/gaming1.jpeg" alt="gaming 1" title="Ghost of Tsushima">
+					<img src="images/gaming2.avif" alt="gaming 2" title=" Stray">
+					<img src="images/gaming3.jpeg" alt="gaming 3" title="Man-Eater">
+			</div>
+		</div>
+	</div>
+<!--CYCLING-->
+<div class="hobbies">
+		<div class="container">
+			<div class="row">
+				<div class="hobby-col-1">
+					<h1><span class="italic">I also do</span>Cycling</h1>
+					<p>Gaming has been a part of me ever since I was a young kid. Gaming is a part of me, it is in my blood! Although, i may not be that good like those professional players but I really love to play. I am fond in playing these videogames, especially <em>RPG'S, Open-world, Fantasy and Power-involved games</em>! Here are some of my compiled photos of the games I played.</p>
+				</div>
+				<div class="hobby-col-2">
+					<img src="images/cycling.jpg" alt="Cycling Hobby" style="object-fit: cover;">
+				</div>
+			</div>
+			<div class="hobbies-row">
+					<img src="images/cycling1.jpg" alt="gaming 1" title="My Face">
+					<img src="images/cycling2.jpg" alt="gaming 2" title="My Bike">
+					<img src="images/portfolio.jpg" alt="gaming 3" title="My Face, again">
+			</div>
+		</div>
+	</div>
+
+<!--CODING-->
+<div class="hobbies">
+		<div class="container">
+			<div class="row">
+				<div class="hobby-col-1">
+					<h1><span class="italic">I also love</span>Coding</h1>
+					<p>Gaming has been a part of me ever since I was a young kid. Gaming is a part of me, it is in my blood! Although, i may not be that good like those professional players but I really love to play. I am fond in playing these videogames, especially <em>RPG'S, Open-world, Fantasy and Power-involved games</em>! Here are some of my compiled photos of the games I played.</p>
+				</div>
+				<div class="hobby-col-2">
+					<img src="images/coding.avif" alt="Cycling Hobby" style="object-fit: cover;">
+				</div>
+			</div>
+			<div class="hobbies-row">
+					<img src="images/webdesign1.jpg" alt="coding 1" title="Coding">
+					<img src="images/software3.jpg" alt="coding 2" title="Coding, but with coffee">
+					<img src="images/webdesign2.jpg" alt="coding 3" title="Still Coding, but with a workstation">
+			</div>
+		</div>
+	</div>
+
+<!--CONTACT-->
+	<div id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="contact-col-1">
+					<div class="sub-title"><h1>Contact <span>Me</span></h1></div>
+					<p><i class="fa-solid fa-paper-plane"></i>cyrilypil@gmail.com</p>
+					<p><i class="fa-brands fa-facebook"></i>Cyril John T. Ypil</p>
+					<p><i class="fa-solid fa-phone"></i>+639105377287</p>
+				</div>
+				<div class="contact-col-2">
+					<form name="submit-to-google-sheet">
+						<input type="text" name="Name" placeholder="Your Name" required>
+						<input type="email" name="Email" placeholder="Your Email" required>
+						<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+						<button type="submit" class="btn">Submit</button>
+					</form>
+					<span id="msg"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!--COPYRIGHT-->
+	<div id="copyright">
+		<address>
+			<p>&copy;Copyright 2022 . Cebu, Philippines<br> All rights reserved.Cyril John Ypil<br></p>
+		</address>
+		<div class="footer">
+			<ul>
+				<li><a href="terms.html">Terms and Conditions</a></li>
+				<li><a href="privacy.html">Privacy Policy</a></li>
+				<li><a href="contactUs.html">Contact Us</a></li>
+				<li><a href="community.html">Community</a></li>
+			</ul>
+		</div>
+	</div>
+	
+		<script>
+		
+		var sidemenu = document.getElementById("sidemenu");
+
+		function openmenu(){
+			sidemenu.style.right = "0";
+		}
+		function closemenu(){
+			sidemenu.style.right = "-200px";
+		}
+		
+	</script>
+
+	<script>
+	  const scriptURL = 'https://script.google.com/macros/s/AKfycbxxFidWrNM6Ad9vZhvptuBggegn-r4JC16Og9ZIKIRY9AsIZAA_v_kuzusCqFD2nTs4YQ/exec'
+	  const form = document.forms['submit-to-google-sheet']
+	  const msg = document.getElementById("msg")
+
+	  form.addEventListener('submit', e => {
+	    e.preventDefault()
+	    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+	      .then(response => {
+	      	msg.innerHTML = "Successfully sent!"
+	      	setTimeout(function(){
+	      		msg.innerHTML = ""
+	      	}, 5000)
+	      	form.reset()
+	      })
+	      .catch(error => console.error('Error!', error.message))
+	  })
+	</script>
+	
+</body>
+</html>

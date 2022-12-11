@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Portfolio |  Home</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/5b8bf4e5f5.js" crossorigin="anonymous"></script>
+	<link rel="shortcut icon" type="image/png" href="images/wolf.png">
+</head>
+<body id="home">
+	<nav>
+		<img class= "logo" src="images/logo.png" alt= "logo">
+		<ul id="sidemenu">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About Me</a></li>
+			<li><a href="#portfolio">Github</a></li>
+			<li><a href="#contact">Contact</a></li>
+			<li><a href= "services.html">Services</a></li>
+			<li><i class="fa-solid fa-xmark" onclick="closemenu()"></i></li>
+		</ul>
+		<i class="fa-solid fa-bars" onclick="openmenu()"></i>
+	</nav>
+	<main>
+		<div id= "header">
+			<div class="container">
+				<div id="header-text">
+					<p>Future Software Engineer</p>
+					<h1>I am <span>Cyril</span><br> from UC-Main.</h1>
+				</div>
+			</div>
+		</div>
+	</main>
+<!--ABOUT-->
+	<div id="about">
+		<div class="container">
+			<div class="row">
+				<div class="about-col-1">
+					<img src="images/user.jpg" alt="user" alt="Cyril John T. Ypil">
+				</div>
+				<div class="about-col-2">
+					<div id="sub-title">
+						<h1>About <span>Me</span></h1>
+					</div>
+					<div class="about-paragraph">
+						<p>I am Cyril John T. Ypil. I&lsquo;m a first year college student in University of Cebu Main-Campus. I am 19 years old and I am the eldest in my family. I am currently living in Minglanilla and my hometown is in Balamban, Cebu. My dream is to become a successful <em>Software Engineer</em>. I never dreamed to be a Software Engineer when I was a kid for I have no idea about that said profession. When I was young, I've always wanted to become a <em>Marine Biologist</em>. But sadly, I wasn&lsquo;t able to pursue it because my parents say that it has low salary, I wasn&lsquo;t after for the huge salary in the first place, but it is a must due to our current financial state and hopefully we will become successful with my family and provide us a very easy and enjoying life. So, for my second option, I chose BSIT. I find this course very fascinating and I'm a tech kind of guy and I really love technology. I chose this course not just because it is in demand, but also I am very interested in it. I am really amazed by those programmers who works in large companies and game studios. Programmers just type something on the computer then magically produced something like videogames and visually pleasing Websites. Web Developing is an interesting course that currently I am studying with. I could call this a productive kind of course because in this field, we are using our vast creativeness and artistic selves and it is very fun designing websites, it is like drawing for me. <br>
+						<a class="button-know-more" href="about.html">Know More</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--PORTFOLIO-->
+	<div id="portfolio">
+		<div class="container">
+			<div class="row">
+				<div class="port-col-1">
+					<div class="sub-title">
+						<h1>Git<span>hub</span></h1>
+					</div>
+					<a href="https://github.com/CryoYohan"><img src="images/portfolio.jpg" alt="photo icon" title="Cyril John T. Ypil"></a>
+					<h2>Cyril John T. Ypil</h2>
+					<p>A Bachelor of Science in Information Technology<br> First Year Student.</p>
+					<div class="socmed">
+						<p>	<i class="fa-solid fa-location-pin"></i> &nbsp;Balamban, Cebu Philippines<br>
+							<i class="fa-brands fa-github"></i>&nbsp; @CryoYohan<br>
+							<i class="fa-brands fa-facebook"></i>&nbsp; SaitamaZZ<br>
+							<i class="fa-brands fa-twitter"></i>&nbsp; @CryoYohan<br>
+							<i class="fa-regular fa-envelope"></i>&nbsp; cyrilypil@gmail.com<br></p>
+					</div>
+				</div>
+				<div class="port-col-2">
+					<p>As a beginner-level programmer, here are some of my simple programs in C++ and Python.</p>
+					<div class="marginport"><img src="images/work1.png" alt="portfolio 1"></div>
+					<div class="marginport"><img src="images/work2.png" alt="portfolio 1"></div>
+					<div class="marginport"><img src="images/work3.png" alt="portfolio 1"></div>
+				</div>
+			</div>
+			<a class="button-view-more" href="https://github.com/CryoYohan" target="_blank">View More</a>
+		</div>
+	</div>
+<!--CONTACT-->
+	<div id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="contact-col-1">
+					<div class="sub-title"><h1>Contact <span>Me</span></h1></div>
+					<a href="mailto:cyrilypil@gmail"><p><i class="fa-solid fa-paper-plane"></i>cyrilypil@gmail.com</p></a>
+					<a href="https://facebook.cpm/SaitamaZZ"><p><i class="fa-brands fa-facebook"></i>Cyril John T. Ypil</p></a>
+					<a href="tel:0910537728"><p><i class="fa-solid fa-phone"></i>+639105377287</p></a>
+				</div>
+				<div class="contact-col-2">
+					<form name="submit-to-google-sheet">
+						<input type="text" name="Name" placeholder="Your Name" required>
+						<input type="email" name="Email" placeholder="Your Email" required>
+						<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+						<button type="submit" class="btn">Submit</button>
+					</form>
+					<span id="msg"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!--COPYRIGHT-->
+	<div id="copyright">
+		<address>
+			<p>&copy;Copyright 2022 . Cebu, Philippines<br> All rights reserved.Cyril John Ypil<br></p>
+		</address>
+		<div class="footer">
+			<ul>
+				<li><a href="terms.html">Terms and Conditions</a></li>
+				<li><a href="privacy.html">Privacy Policy</a></li>
+				<li><a href="contactUs.html">Contact Us</a></li>
+				<li><a href="community.html">Community</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+	<script>
+		
+		var sidemenu = document.getElementById("sidemenu");
+
+		function openmenu(){
+			sidemenu.style.right = "0";
+		}
+		function closemenu(){
+			sidemenu.style.right = "-200px";
+		}
+		
+	</script>
+
+
+	<script>
+	  const scriptURL = 'https://script.google.com/macros/s/AKfycbxxFidWrNM6Ad9vZhvptuBggegn-r4JC16Og9ZIKIRY9AsIZAA_v_kuzusCqFD2nTs4YQ/exec'
+	  const form = document.forms['submit-to-google-sheet']
+	  const msg = document.getElementById("msg")
+
+	  form.addEventListener('submit', e => {
+	    e.preventDefault()
+	    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+	      .then(response => {
+	      	msg.innerHTML = "Successfully sent!"
+	      	setTimeout(function(){
+	      		msg.innerHTML = ""
+	      	}, 5000)
+	      	form.reset()
+	      })
+	      .catch(error => console.error('Error!', error.message))
+	  })
+	</script>
+</body>
+</html>

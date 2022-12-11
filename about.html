@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> My Personal Website | About</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/5b8bf4e5f5.js" crossorigin="anonymous"></script>
+	<link rel="shortcut icon" type="image/png" href="images/wolf.png">
+</head>
+<body id="home">
+	<nav>
+		<img class="logo" src="images/logo.png" alt="logo">
+		<ul id="sidemenu">
+			<li><a href="#about">About Myself</a></li>
+			<li><a href="#achievements">Achievements</a></li>
+			<li><a href="#certificates">Certificates</a></li>
+			<li><a href="hobbies.html">Hobbies</a></li>
+			<li><a href="index.html">Back to Home</a></li>
+			<li><i class="fa-solid fa-xmark" onclick="closemenu()"></i></li>
+		</ul>
+		<i class="fa-solid fa-bars" onclick="openmenu()"></i>
+	</nav>
+	<main>
+		<div id="header">
+			<div class="container">
+				<div id="header-text">
+					<p>Future Software Engineer</p>
+					<h1>I am <span>Cyril</span><br> from UC-Main.</h1>
+				</div>
+			</div>
+		</div>
+	</main>
+<!---ABOUT-->
+	<div id="about">
+		<div class="container">
+			<div class="row">
+				<div class="gallery-col-1">
+					<img src="images/aboutme1.jpg" alt="My Face">
+				</div>
+				<div class="gallery-col-2">
+					<div id="sub-title">
+						<h1>About Me</h1>
+					</div>
+					<p>I am Cyril John T. Ypil. I&lsquo;m a first year college student in University of Cebu Main-Campus. I am 19 years old and I am the eldest in my family. I am currently living in Minglanilla and my hometown is in Balamban, Cebu. My dream is to become a successful <em>Software Engineer</em>. I never dreamed to be a Software Engineer when I was a kid for I have no idea about that said profession. When I was young, I've always wanted to become a <em>Marine Biologist</em>. But sadly, I wasn&lsquo;t able to pursue it because my parents say that it has low salary, I wasn&lsquo;t after for the huge salary in the first place, but it is a must due to our current financial state and hopefully we will become successful with my family and provide us a very easy and enjoying life. So, for my second option, I chose BSIT. I find this course very fascinating and I'm a tech kind of guy and I really love technology. I chose this course not just because it is in demand, but also I am very interested in it. I am really amazed by those programmers who works in large companies and game studios. Programmers just type something on the computer then magically produced something like videogames and visually pleasing Websites. Web Developing is an interesting course that currently I am studying with. I could call this a productive kind of course because in this field, we are using our vast creativeness and artistic selves and it is very fun designing websites, it is like drawing for me.<br>
+					<a class="button-know-more" href="gallery.html">View Gallery</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--ACHIEVEMENTS-->
+	<div id="achievements">
+		<div class="container">
+			<h2 class="sub-header">Here are some of my proudly achieved achievements.</h2>
+			<div class="achievements">
+				<div class="pictures"><p>Defeated the Valkyrie Queen for the first time</p><img src="images/achiev1.jpeg" alt="portfolio 1" title="God of War 2018"></div>
+				<div class="pictures"><p>Obtained the Platinum Trophy for God of War</p><img src="images/achiev2.jpeg" alt="portfolio 2" title="God of War 2018"></div>
+				<div class="pictures"><p>Obtained my Full Zeus Armor/God Armor</p><img src="images/achiev3.jpeg" alt="portfolio 3" title="God of War 2018"></div>
+			</div>
+		</div>
+	</div>
+<!--CERTIFICATES-->
+	<div id="certificates">
+		<div class="container">
+			<h2 class="sub-header">My Earned Certificates</h2>
+				<div class="achievements">
+					<div class="pictures"><p>Participated as a young scout in Mt. Manunggal.</p><img src="images/certificate1.jpg" alt="certificate1"></div>
+					<div class="pictures"><p>Participated in Jamboree.</p><img src="images/certificate2.jpg" alt="certificate3"></div>
+					<div class="pictures"><p>Achieved with high honors in senior highschool grade 12.</p><img src="images/certificate3.jpg" alt="certificate2"></div>
+				</div>
+		</div>
+	</div>
+<!--CONTACT-->
+	<div id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="contact-col-1">
+					<div class="sub-title"><h1>Contact <span>Me</span></h1></div>
+					<p><i class="fa-solid fa-paper-plane"></i>cyrilypil@gmail.com</p>
+					<p><i class="fa-brands fa-facebook"></i>Cyril John T. Ypil</p>
+					<p><i class="fa-solid fa-phone"></i>+639105377287</p>
+				</div>
+				<div class="contact-col-2">
+					<form name="submit-to-google-sheet">
+						<input type="text" name="Name" placeholder="Your Name" required>
+						<input type="email" name="Email" placeholder="Your Email" required>
+						<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+						<button type="submit" class="btn">Submit</button>
+					</form>
+					<span id="msg"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!--COPYRIGHT-->
+	<div id="copyright">
+		<address>
+			<p>&copy;Copyright 2022 . Cebu, Philippines<br> All rights reserved.Cyril John Ypil<br></p>
+		</address>
+		<div class="footer">
+			<ul>
+				<li><a href="terms.html">Terms and Conditions</a></li>
+				<li><a href="privacy.html">Privacy Policy</a></li>
+				<li><a href="contactUs.html">Contact Us</a></li>
+				<li><a href="community.html">Community</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<script>
+		
+		var sidemenu = document.getElementById("sidemenu");
+
+		function openmenu(){
+			sidemenu.style.right = "0";
+		}
+		function closemenu(){
+			sidemenu.style.right = "-200px";
+		}
+		
+	</script>
+
+	<script>
+	  const scriptURL = 'https://script.google.com/macros/s/AKfycbxxFidWrNM6Ad9vZhvptuBggegn-r4JC16Og9ZIKIRY9AsIZAA_v_kuzusCqFD2nTs4YQ/exec'
+	  const form = document.forms['submit-to-google-sheet']
+	  const msg = document.getElementById("msg")
+
+	  form.addEventListener('submit', e => {
+	    e.preventDefault()
+	    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+	      .then(response => {
+	      	msg.innerHTML = "Successfully sent!"
+	      	setTimeout(function(){
+	      		msg.innerHTML = ""
+	      	}, 5000)
+	      	form.reset()
+	      })
+	      .catch(error => console.error('Error!', error.message))
+	  })
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Portfolio |  Services</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/5b8bf4e5f5.js" crossorigin="anonymous"></script>
+	<link rel="shortcut icon" type="image/png" href="images/wolf.png">
+</head>
+<body>
+	<nav>
+		<img class="logo" src="images/logo.png" alt="logo">
+		<ul id="sidemenu">
+            <li><a href="#services">My Services</a></li>
+			<li><a href="index.html">Back to Home</a></li>
+			<li><i class="fa-solid fa-xmark" onclick="closemenu()"></i></li>
+		</ul>
+		<i class="fa-solid fa-bars" onclick="openmenu()"></i>
+	</nav>
+	<main>
+		<div id="header">
+			<div class="container">
+				<div id="header-text">
+					<p>Future Software Engineer</p>
+					<h1>I am <span>Cyril</span><br> from UC-Main.</h1>
+				</div>
+			</div>
+		</div>
+	</main>
+<!--SERVICES-->
+<!--WEB DEVELOPMENT-->
+	<div id="services">
+		<div class="container">
+            <div class="sub-title">
+                <p class="services-logo"><i class="fa-solid fa-crop"></i></p>
+                <p><span class="occupation-span">UI/UX</span> Designer</p>
+                <h2>Web Development</h2>
+            </div>
+            <div class="columns">
+				<div class="column-img">
+	                <img src="images/webdesign4.jpg" alt="work1">
+	                <img src="images/webdesign5.jpg" alt="work2">
+	                <img src="images/webdesign6.jpg" alt="work3">
+	            </div>
+	        </div>
+		</div>
+	</div>
+
+<!--SOFTWARE DEVELOPMENT-->
+	<div class="services">
+		<div class="container">
+            <div class="sub-title">
+                <p class="services-logo"><i class="fa-solid fa-microchip"></i></p>
+                <p><span class="occupation-span">Software</span> Engineer</p>
+                <h2>Software Development</h2>
+            </div>
+            <div class="columns">
+				<div class="column-img">
+	                <img src="images/software1.jpg" alt="work1">
+	                <img src="images/software2.jpg" alt="work2">
+	                <img src="images/software3.jpg" alt="work3">
+	            </div>
+	        </div>
+		</div>
+	</div>
+<!--GAME PROGRAMMER-->
+	<div class="services">
+		<div class="container">
+            <div class="sub-title">
+                <p class="services-logo"><i class="fa-solid fa-gamepad"></i></p>
+                <p><span class="occupation-span">Game</span> Programmer</p>
+                <h2>Game Development</h2>
+            </div>
+            <div class="columns">
+				<div class="column-img">
+	                <img src="images/gamedev1.jpg" alt="work1" title="God of War: Ragnarok">
+	                <img src="images/gamedev3.jpg" alt="work2" title="Spiderman: Miles Morales">
+	                <img src="images/gamedev2.jpg" alt="work3" title="Ghost of Tsushima">
+	            </div>
+	        </div>
+		</div>
+	</div>
+
+<!--VOLUNTEER-->
+	<div class	="services">
+		<div class="container">
+            <div class="sub-title">
+                <p class="services-logo"><i class="fa-solid fa-kit-medical"></i></p>
+                <p><span class="occupation-span">Active</span> Volunteer</p>
+                <h2>Community Service</h2>
+            </div>
+            <div class="columns">
+				<div class="column-img">
+	                <img src="images/service1.jpg" alt="work1">
+	                <img src="images/service2.jpg" alt="work2">
+	                <img src="images/service3.jpg" alt="work3">
+	            </div>
+	        </div>
+		</div>
+	</div>
+
+
+<!--CONTACT-->
+	<div id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="contact-col-1">
+					<div class="sub-title"><h1>Contact <span>Me</span></h1></div>
+					<p><i class="fa-solid fa-paper-plane"></i>cyrilypil@gmail.com</p>
+					<p><i class="fa-brands fa-facebook"></i>Cyril John T. Ypil</p>
+					<p><i class="fa-solid fa-phone"></i>+639105377287</p>
+				</div>
+				<div class="contact-col-2">
+					<form name="submit-to-google-sheet">
+						<input type="text" name="Name" placeholder="Your Name" required>
+						<input type="email" name="Email" placeholder="Your Email" required>
+						<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+						<button type="submit" class="btn">Submit</button>
+					</form>
+					<span id="msg"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- COPYRIGHT -->
+    <div id="copyright">
+		<address>
+			<p>&copy;Copyright 2022 . Cebu, Philippines<br> All rights reserved.Cyril John Ypil<br></p>
+		</address>
+		<div class="footer">
+			<ul>
+				<li><a href="terms.html">Terms and Conditions</a></li>
+				<li><a href="privacy.html">Privacy Policy</a></li>
+				<li><a href="contactUs.html">Contact Us</a></li>
+				<li><a href="community.html">Community</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<script>
+		
+		var sidemenu = document.getElementById("sidemenu");
+
+		function openmenu(){
+			sidemenu.style.right = "0";
+		}
+		function closemenu(){
+			sidemenu.style.right = "-200px";
+		}
+		
+	</script>
+
+	<script>
+	  const scriptURL = 'https://script.google.com/macros/s/AKfycbxxFidWrNM6Ad9vZhvptuBggegn-r4JC16Og9ZIKIRY9AsIZAA_v_kuzusCqFD2nTs4YQ/exec'
+	  const form = document.forms['submit-to-google-sheet']
+	  const msg = document.getElementById("msg")
+
+	  form.addEventListener('submit', e => {
+	    e.preventDefault()
+	    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+	      .then(response => {
+	      	msg.innerHTML = "Successfully sent!"
+	      	setTimeout(function(){
+	      		msg.innerHTML = ""
+	      	}, 5000)
+	      	form.reset()
+	      })
+	      .catch(error => console.error('Error!', error.message))
+	  })
+	</script>
+	
+	
+</body>
+</html>

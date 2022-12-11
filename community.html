@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Portfolio |  Home</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/5b8bf4e5f5.js" crossorigin="anonymous"></script>
+	<link rel="shortcut icon" type="image/png" href="images/wolf.png">
+	<style>
+		.community{
+		    background: #b8c1ec;
+		    padding: 1.5em 2.5em;
+		    border-radius: 15px;
+		    box-shadow: 10px 18px 1px #666666;
+		    color: #2a2a2a;
+		    margin: 2.5em  2.5em;
+		}
+	</style>
+</head>
+<body id="home">
+	<nav>
+		<img class= "logo" src="images/logo.png" alt= "logo">
+		<ul id="sidemenu">
+			<li><a href= "index.html">Back to home</a></li>
+			<li><i class="fa-solid fa-xmark" onclick="closemenu()"></i></li>
+		</ul>
+		<i class="fa-solid fa-bars" onclick="openmenu()"></i>
+	</nav>
+
+<!--COMMUNIY GUIDELINES-->
+	<div class="community">
+		<h1>Community Guidelines</h1><br>
+		<p>Overview:<br>
+		The goals of this community are to assist alumni in their personal and professional pursuits, to help maintain friendships and connections formed while students, to build strong and mutually beneficial ties between all alumni, to promote goodwill in the community and to stimulate interest and enhance involvement with our institution through increased opportunities for engagement.<br>
+		<br>
+		In order to meet the goals of this community, it’s important for members to feel like they are in a safe place that is populated by people with shared interests. As such, we request that you read and adhere to the guidelines that follow.<br>
+		<br>
+		Guidelines:<br>
+		<br>
+		Treat others online as you would treat them in real life<br>
+		Be tolerant towards other’s viewpoints; respectfully disagree when opinions do not align<br>
+		Respect the privacy and personal information of other alumni<br>
+		Communicate with courtesy and respect<br>
+		Please do not:<br>
+		<br>
+		Make personal attacks on other community members<br>
+		Use defamatory remarks or make false statements against others<br>
+		Post prejudiced comments or profanity<br>
+		Bully or make inflammatory remarks to other community members<br>
+		Use messaging/email responsibly.  These tools are intended to keep alumni in touch with one another, to help facilitate networking and to promote common <br>interests. Some examples might include:<br>
+		<br>
+		Inviting local area alumni to a networking event or to join a local runners club<br>
+		Helping to coordinate a class reunion<br>
+		Reaching out to individual alumni for advice, to reconnect or to join a group<br>
+		Messaging/email and use of personal contact information made available through the Alumni Directory —including names, mailing addresses, phone numbers,<br> email addresses, social media accounts, student information, employment information for any commercial, advocacy, promotional, or political purpose is <br>prohibited. Prohibited activities include solicitations for business or personal services, fundraising, cold-calling of any kind, mass-mailings, or <br>broadcast e-mails.<br>
+		Consequences:<br>
+		We will take action when we see someone violating these guidelines. Sometimes that just means giving someone a warning; other times it means revoking <br>certain privileges or accounts entirely. We request that all community members report behavior that violates our guidelines to support@360alumni.com.<br>
+		<br>
+		Agreement:<br>
+		By logging onto the community and activating your profile, you are considered to be in agreement with the terms and conditions listed above.<p>
+		</div>
+<!--CONTACT-->
+	<div id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="contact-col-1">
+					<div class="sub-title"><h1>Contact <span>Me</span></h1></div>
+					<p><i class="fa-solid fa-paper-plane"></i>cyrilypil@gmail.com</p>
+					<p><i class="fa-brands fa-facebook"></i>Cyril John T. Ypil</p>
+					<p><i class="fa-solid fa-phone"></i>+639105377287</p>
+				</div>
+				<div class="contact-col-2">
+					<form>
+						<input type="text" name="Name" placeholder="Your Name" required>
+						<input type="email" name="Email" placeholder="Your Email" required>
+						<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+						<button type="submit" class="btn">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+<!--COPYRIGHT-->
+	<div id="copyright">
+		<address>
+			<p>&copy;Copyright 2022 . Cebu, Philippines<br> All rights reserved.Cyril John Ypil<br></p>
+		</address>
+		<div class="footer">
+			<ul>
+				<li><a href="terms.html">Terms and Conditions</a></li>
+				<li><a href="privacy.html">Privacy Policy</a></li>
+				<li><a href="contactUs.html">Contact Us</a></li>
+				<li><a href="community.html">Community</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+	<script>
+		
+		var sidemenu = document.getElementById("sidemenu");
+
+		function openmenu(){
+			sidemenu.style.right = "0";
+		}
+		function closemenu(){
+			sidemenu.style.right = "-200px";
+		}
+		
+	</script>
+
+	<script>
+	  const scriptURL = 'https://script.google.com/macros/s/AKfycbxxFidWrNM6Ad9vZhvptuBggegn-r4JC16Og9ZIKIRY9AsIZAA_v_kuzusCqFD2nTs4YQ/exec'
+	  const form = document.forms['submit-to-google-sheet']
+	  const msg = document.getElementById("msg")
+
+	  form.addEventListener('submit', e => {
+	    e.preventDefault()
+	    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+	      .then(response => {
+	      	msg.innerHTML = "Successfully sent!"
+	      	setTimeout(function(){
+	      		msg.innerHTML = ""
+	      	}, 5000)
+	      	form.reset()
+	      })
+	      .catch(error => console.error('Error!', error.message))
+	  })
+	</script>
+	
+</body>
+</html>
